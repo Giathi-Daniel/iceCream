@@ -1,0 +1,40 @@
+/* ==================================== *\
+/*    ======== GENERAL STYLING ======== *|
+\* ==================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    block-size: 100vh;
+    inline-size: 100%;
+}
+
+/* ==================================== *\
+/*    ======== HEADER STYLING ======== *|
+\* ==================================== */
+section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    box-shadow: #fff;
+}
+section nav .logo img {
+    inline-size: 75px;
+    block-size: 75px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+section nav ul {
+    list-style: none;
+}
+section nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
