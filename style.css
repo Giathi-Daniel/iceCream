@@ -140,6 +140,84 @@ section:nth-child(even) {
 }
 
 
+/* ==================================== *\
+|*   ======== FEATURES STYLING ======== *|
+\* ==================================== */
+.heading {
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-block-start: 1rem;
+    padding-block-end: 2rem;
+}
+.special .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+}
+.special .box-container .box {
+    padding: 2.5rem;
+    background: #ffff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.special .box-container .box .fa-heart,
+.special .box-container .box .fa-eye {
+    position: absolute;
+    inset-block-start: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    block-size: 5rem;
+    inline-size: 5rem;
+    color: var(--black);
+    line-height: 5rem;
+    font-size: 2rem;
+}
+.special .box-container .box .fa-heart:hover,
+.special .box-container .box .fa-eye:hover {
+    color: #ffff;
+    background: var(--green);
+}
+.special .box-container .box .fa-heart {
+    inset-inline-end: -15rem;
+}
+.special .box-container .box .fa-eye {
+    inset-inline-start: -15rem;
+}
+.special .box-container .box:hover .fa-heart {
+    inset-inline-end: 1.5rem;
+}
+.special .box-container .box:hover .fa-eye {
+    inset-inline-start: 1.5rem;
+}
+.special .box-container .box img {
+    inline-size: 17rem;
+    margin: 1rem 0;
+}
+.special .box-container .box h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+}
+.special .box-container .box .stars {
+    padding: 1rem 0;
+}
+.special .box-container .box .stars i {
+    font-size: 1.5rem;
+    color: var(--green);
+}
+.special .box-container .box span {
+    color: var(--green);
+    font-weight: bolder;
+    margin-inline-end: 1rem;
+    font-size: 2.5rem;
+}
+
+
+
 
 
 
@@ -154,6 +232,10 @@ section:nth-child(even) {
     }
     .header {
         padding: 1rem 2rem;
+    }
+    .special .box-container .box img {
+        block-size: auto;
+        inline-size: 100%;
     }
 }
 @media (max-width:768px) {
