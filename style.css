@@ -19,7 +19,7 @@
 }
 html {
     font-size: 62%;
-    overflow: hidden;
+    /* overflow: hidden; */
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
@@ -86,7 +86,7 @@ section:nth-child(even) {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding-top: 9rem;
+    padding-block-start: 9rem;
 }
 .home .home-slider .slide .content {
     flex: 1 1 45rem;
@@ -112,7 +112,7 @@ section:nth-child(even) {
     line-height: 1.5;
 }
 .btn {
-    margin-top: 1rem;
+    margin-block-start: 1rem;
     display: inline-block;
     font-size: 1.7rem;
     color: #ffff;
@@ -120,6 +120,23 @@ section:nth-child(even) {
     border-radius: .5rem;
     cursor: pointer;
     padding: .8rem 3rem;
+}
+.btn:hover {
+    background: #091f58;
+}
+.swiper-pagination-bullet {
+    inline-size: 30px;
+    block-size: 30px;
+    text-align: center;
+    line-height: 5px;
+    font-size: 15px;
+    opacity: 1;
+    background: rgba(0,0,0,.2);
+    padding: 10px 15px 15px 10px;
+}
+.swiper-pagination-bullet-active {
+    color: #ffff;
+    background: var(--green);
 }
 
 
@@ -145,12 +162,12 @@ section:nth-child(even) {
     }
     .header .navbar{
        position: absolute;
-       top: 100%;
-       left: 0;
-       right: 0;
+       inset-block-start: 100%;
+       inset-inline-start: 0;
+       inset-inline-end: 0;
        background: #ffff;
-       border-top: .1rem solid rgba(0,0,0,.2);
-       border-bottom: .1rem solid rgba(0,0,0,.2);
+       border-block-start: .1rem solid rgba(0,0,0,.2);
+       border-block-end: .1rem solid rgba(0,0,0,.2);
        padding: 1rem;
        clip-path: polygon(0 0, 100% 0,100% 0,0 0);
     }
@@ -169,5 +186,20 @@ section:nth-child(even) {
         font-size: 2rem;
         background: #eee;
         color: #000;
+    }
+    .home .home-slider .slide .image {
+        text-align: center;
+    }
+    .home .home-slider .slide .image img {
+        inline-size: 50%;
+    }
+    .home .home-slider .slide .content span {
+        font-size: 2rem;
+    }
+    .home .home-slider .slide .content h3 {
+        font-size: 5rem;
+    }
+    .home .home-slider .slide .content p {
+        font-size: 2rem;
     }
 }
