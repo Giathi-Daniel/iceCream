@@ -11,21 +11,47 @@
 </head>
 <body>
     <!--***************** HEADER SECTION **********************-->
-    <section id="home">
-        <nav>
-            <div class="logo"><img src="images/logo.jpeg" alt=""></div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#special">Special</a></li>
-                <li><a href="#review">Review</a></li>
-                <li><a href="#order">Order</a></li>
-            </ul>
-            <i class="fa fa-magnifying-glass"></i>
-            <i class="fa fa-cart-shopping"></i>
+    <header class="header">
+        <a href="#home" class="logo"><img src="images/logo.jpeg" alt=""></a>
+        <nav class="navbar">    
+            <a href="#home" class="active">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#special">Special</a>
+            <a href="#about">About</a>                
+            <a href="#review">Review</a>
+            <a href="#order">Order</a>                      
         </nav>
-    </section>
+        <div class="icons">
+            <i class="fa fa-magnifying-glass"></i>
+            <a href="#order" class="fa fa-cart-shopping"></a>
+            <i class="fa fa-bars" id="bars"></i>
+        </div>  
+    </header>
     <!--***************** HEADER SECTION END **********************-->
+
+
+    <!--***************** HERO SECTION **********************-->
+    <section id="home" class="home">
+        <div class="home-slider">
+            <div class="wrapper">
+                <div class="slide">
+                    <div class="content">
+                        <span>Enjoy Our Special Ice Cream</span>
+                        <h3>Cool Ice Cream</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id saepe sunt, modi cupiditate soluta doloribus?
+                        </p>
+                        <a href="#order" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/img1.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>      
+    <!--***************** HERO SECTION END **********************-->
+
+    <script src="script.js"></script>
 </body>
 </html>
