@@ -358,7 +358,7 @@ section:nth-child(even) {
 
 
 /* ==================================== *\
-/*    ======== ABOUT US STYLING ======== *|
+/*   ======== ABOUT US STYLING ======== *|
 \* ==================================== */
 .about .row {
     display: flex;
@@ -414,6 +414,16 @@ section:nth-child(even) {
 }
 
 
+/* ==================================== *\
+|*   ======== FOOTER STYLING ======== *|
+\* ==================================== */
+.copy-right {
+    padding: 15px 0;
+    text-align: center;
+    background: var(--black);
+    color: #ffff;
+    font-size: 1.5rem;
+}
 
 
 
@@ -423,7 +433,7 @@ section:nth-child(even) {
 /* ==================================== *\
 |*    ======== MEDIA QUERIES ======== *|
 \* ==================================== */
-@media (max-inline-size: 991px) {
+@media (max-width: 991px) {
   html {
     font-size: 55%;
   }
@@ -435,7 +445,7 @@ section:nth-child(even) {
     inline-size: 100%;
   }
 }
-@media (max-inline-size: 768px) {
+@media (max-width: 768px) {
   .header .icons #bars {
     display: inline-block;
   }
